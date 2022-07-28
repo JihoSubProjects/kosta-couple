@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.maker.couple.domain.Matching;
 import com.maker.couple.domain.Profile;
 
 @RestController
@@ -41,6 +42,21 @@ public class ProfileController {
     @DeleteMapping("/{id}")
     public void deleteProfile(@PathVariable("id") Long id) {
         return;
+    }
+
+    @GetMapping("/{id}/matching")
+    public List<Matching> fetchMatchings(@PathVariable("id") Long id) {
+        return new ArrayList<>();
+    }
+
+    @GetMapping("/{id}/matching/raise")
+    public List<Matching> fetchRaiseMatchings(@PathVariable("id") Long id) {
+        return new ArrayList<>();
+    }
+
+    @GetMapping("/{id}/matching/call")
+    public List<Matching> fetchCallMatchings(@PathVariable("id") Long id) {
+        return new ArrayList<>();
     }
 
 }

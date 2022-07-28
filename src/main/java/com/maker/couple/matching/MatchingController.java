@@ -20,12 +20,12 @@ public class MatchingController {
     }
 
     @GetMapping("/{profile_id}/raise")
-    public List<Matching> fetchSendMathings(@PathVariable("profile_id") Long profileId) {
+    public List<Matching> fetchRaiseMathings(@PathVariable("profile_id") Long profileId) {
         return new ArrayList<>();
     }
 
     @GetMapping("/{profile_id}/call")
-    public List<Matching> fetchReceivedMathings(@PathVariable("profile_id") Long profileId) {
+    public List<Matching> fetchCallMathings(@PathVariable("profile_id") Long profileId) {
         return new ArrayList<>();
     }
 
